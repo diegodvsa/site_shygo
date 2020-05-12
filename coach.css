@@ -1,0 +1,357 @@
+/* reset */
+
+*{
+    margin: 0;
+    padding: 0;    
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;  
+    
+}
+
+body{
+    font-family: 'Myriad Pro Regular';
+}
+
+/* container */
+.container{
+    
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* linha */
+
+.row{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+.row::before,
+.row::after{
+    content: "";
+    display: table;
+}
+
+.row::after{
+    clear: both;
+}
+
+/* colunas */
+
+.col{
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 1px;    
+    padding: 5px 5px;
+    width: 100%;
+    margin-right: -4px;
+}
+
+body{
+    background-color: #e3e3e4;
+}
+
+.topo img{
+    width: 200px;
+}
+
+h2{
+    color: midnightblue;
+    margin-bottom: 40px;
+}
+
+.topo{
+    text-align: center;
+    background-color: #1a1b1d;
+    padding: 2px auto;
+}
+
+.topo p{
+    color: white;
+    font-weight: bolder;
+    margin: 5px auto;
+}
+
+.banner{
+    background-image: url("img/bnc.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: top;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.banner p{
+    color: white;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.banner:last-child{
+    margin-bottom: 0;
+}
+
+.desc{
+    padding: 10px 10px;
+    vertical-align: top;
+}
+
+.lado{
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px 5px 4px rgb(212, 212, 212);
+    padding-top: 25px;
+    color: #1a1b1d;       
+    vertical-align: center;
+}
+
+.lado p{
+    text-align: left;
+    padding: 15px 30px;
+}
+
+.lado ul{
+    text-align: left;
+    margin-bottom:40px;
+    padding: 15px 30px;
+}
+
+.lado li{
+    margin-bottom: 20px;
+}
+
+.lado a{
+    color: white;
+    background-color: midnightblue;
+    padding: 5px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.precos{
+    color: white;
+}
+
+.precos ul{
+    margin-top: 20px;
+    list-style-type: none;
+}
+
+.precos li{
+    margin: initial;
+    margin-bottom: 6px;
+}
+
+h3{
+    padding-top: 20px;
+}
+
+.pa{
+    background-image: url("img/rivz.png");
+    background-size: cover;
+    background-position: rights;
+}
+
+.pc{
+    background-image: url("img/yasz.png");
+    background-size: cover;
+}
+
+.falatu{
+    line-height: 2em;
+    padding-left: 30px ;
+    margin-bottom: 20px;
+}
+
+.como{
+    padding-top: 20px;
+    background-color: white;
+}
+
+.como h3{
+    
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.ctt{
+    
+    padding-left: 30px;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.ctt a{
+    text-align: center;
+    text-decoration: none;
+    color: midnightblue;
+    font-size: 1em;
+    padding: 0 auto;
+}
+
+.icons{
+    text-align: center;
+    padding-top: 0px;
+}
+.icone{
+
+    text-align: center;
+}
+.icone img{
+    text-align: center;
+    width: 40px;
+    margin-bottom: 15px;
+}
+
+.rodape{
+    background-color: #1a1b1d;
+    text-align: center;
+    padding: 5px;
+    color: white;
+}
+
+.anlv{
+    width: 100%;
+    height: 300px;
+}
+
+.vidio{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+    background-image: url("img/fundo.png");      
+}
+
+.youtube-player{
+    width: 100%;
+    height: 80%;
+    opacity: 1;
+}
+
+.boi{
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+
+.vidio p{
+    text-align: right;
+    font-size: 3em;
+    margin-right: 20px;
+    color: white;    
+}
+
+.vidio p:hover{
+    cursor: pointer;
+}
+
+.apresent{
+    width: 100%;
+    height: 300px;
+}
+
+.depoimentos h2{
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.depoimentos img{
+    width: 100%;
+    
+    max-height: 350px;
+}
+
+
+@media (min-width: 600px){    
+    .col-6{
+        width: 50%;        
+    }
+
+    .col-4{
+        width: 33.3333%;
+    }
+
+    .banner p{
+        font-size: 2em;
+    }
+    .apresent{
+        height: 500px;
+    }
+}
+
+
+@font-face {
+font-family: 'Myriad Pro Semibold';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Semibold'), url('fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Semibold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Semibold Italic'), url('fonts/MYRIADPRO-SEMIBOLDIT.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Bold Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Condensed'), url('fonts/MYRIADPRO-BOLDCOND.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold'), url('fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Italic'), url('fonts/MYRIADPRO-BOLDIT.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Bold Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Bold Condensed Italic'), url('fonts/MYRIADPRO-BOLDCONDIT.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Regular'), url('fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Condensed';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed'), url('fonts/MYRIADPRO-COND.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Condensed Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Condensed Italic'), url('fonts/MYRIADPRO-CONDIT.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro Light';
+font-style: normal;
+font-weight: normal;
+src: local('Myriad Pro Light'), url('fonts/MyriadPro-Light.woff') format('woff');
+}

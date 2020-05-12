@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pense como Challenger!</title>
+    <link rel="stylesheet" href="capa.css">
+</head>
+
+<body>
+
+    <div class="vidio" id="vidio">
+        <p onclick="fechar()">FECHAR VÍDEO - X</p>
+        <div class="boi"><iframe id="player" class="youtube-player" type="text/html" width="500px" height="200px" src="https://www.youtube.com/embed/b-24QoE2ywM?enablejsapi=1&autoplay=1" frameborder="0"></iframe></div>
+    </div>
+
+<div class="container">
+    <div class="row">
+        <div class="clogo">
+            <img src="img/logo.png" alt="lampada">
+        </div>
+    </div>
+
+    <div class="row">
+        
+        <div class="col col-6">
+            <div class="gp1">
+                <a href="/curso.html" class="curso"> SAIBA SOBRE O CURSO</a>
+            </div>
+        </div>
+
+        <div class="col col-6">
+            <div class="gp2">
+                <a href="/coach.html" class="curso"> SAIBA SOBRE O COACH</a>
+            </div>
+        </div>       
+    </div>
+
+    <div class="row">
+        <div class="col rodape">
+            
+                <p>  2020 &copy; Shygo - Todos os direitos reservados.</p>
+            
+        </div>
+    </div>
+
+</div>
+<script type="text/javascript">
+    function fechar(){
+        document.getElementById("vidio").style.display = "none";
+
+        
+        document.getElementById("player").src = '';
+        
+    }
+
+</script>
+
+</body>
+
+
+</html>
